@@ -1,0 +1,778 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Portfolio | Shokhjahon</title>
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/aos.css' %}">
+<link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!--<script nonce="653de613-a677-4f31-a81a-451b2e73aadc">(function(w,d){!function(bg,bh,bi,bj){bg[bi]=bg[bi]||{};bg[bi].executed=[];bg.zaraz={deferred:[],listeners:[]};bg.zaraz.q=[];bg.zaraz._f=function(bk){return function(){var bl=Array.prototype.slice.call(arguments);bg.zaraz.q.push({m:bk,a:bl})}};for(const bm of["track","set","debug"])bg.zaraz[bm]=bg.zaraz._f(bm);bg.zaraz.init=()=>{var bn=bh.getElementsByTagName(bj)[0],bo=bh.createElement(bj),bp=bh.getElementsByTagName("title")[0];bp&&(bg[bi].t=bh.getElementsByTagName("title")[0].text);bg[bi].x=Math.random();bg[bi].w=bg.screen.width;bg[bi].h=bg.screen.height;bg[bi].j=bg.innerHeight;bg[bi].e=bg.innerWidth;bg[bi].l=bg.location.href;bg[bi].r=bh.referrer;bg[bi].k=bg.screen.colorDepth;bg[bi].n=bh.characterSet;bg[bi].o=(new Date).getTimezoneOffset();if(bg.dataLayer)for(const bt of Object.entries(Object.entries(dataLayer).reduce(((bu,bv)=>({...bu[1],...bv[1]})),{})))zaraz.set(bt[0],bt[1],{scope:"page"});bg[bi].q=[];for(;bg.zaraz.q.length;){const bw=bg.zaraz.q.shift();bg[bi].q.push(bw)}bo.defer=!0;for(const bx of[localStorage,sessionStorage])Object.keys(bx||{}).filter((bz=>bz.startsWith("_zaraz_"))).forEach((by=>{try{bg[bi]["z_"+by.slice(7)]=JSON.parse(bx.getItem(by))}catch{bg[bi]["z_"+by.slice(7)]=bx.getItem(by)}}));bo.referrerPolicy="origin";bo.src="{% static 'js/sd0d9.js' %}?z="+btoa(encodeURIComponent(JSON.stringify(bg[bi])));bn.parentNode.insertBefore(bo,bn)};["complete","interactive"].includes(bh.readyState)?zaraz.init():bg.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script>-->
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="{% url 'index' %}"><span>S</span>hokhjahon</a>
+<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu
+</button>
+<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav nav ml-auto">
+<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+<li class="nav-item"><a href="#services-section" class="nav-link"><span>Services</span></a></li>
+<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+<!--<li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>-->
+<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="hero-wrap js-fullheight">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+<div class="text text-center">
+<span class="subheading">Hey! I am</span>
+<h1>Shokhjahon</h1>
+<h2>I'm a
+<span class="txt-rotate" data-period="3000" data-rotate='["Coder.", "Backend Developer.", "Mobilographer.", "Designer & Videomaker" ]'></span>
+</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mouse">
+<a href="#" class="mouse-icon">
+<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+</a>
+</div>
+</section>
+<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+<div class="container">
+<div class="row d-flex no-gutters">
+<div class="col-md-6 col-lg-6 d-flex">
+<div class="img-about img d-flex align-items-stretch">
+<div class="overlay"></div>
+<div class="img d-flex align-self-stretch align-items-center" style="background-image:url({% static 'images/shokhjahon.jpg' %});">
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+<div class="row justify-content-start pb-3">
+<div class="col-md-12 heading-section ftco-animate">
+<h1 class="big">About</h1>
+<h2 class="mb-4">About Me</h2>
+<p>Backend developer from Samarkand</p>
+<ul class="about-info mt-4 px-md-0 px-2">
+<li class="d-flex"><span>Name:</span> <span>Shokhjahon Abdukhalimov</span></li>
+ <li class="d-flex"><span>Age:</span> <span>13.5</span></li>
+<li class="d-flex"><span>Date of birth:</span> <span>30.12.2009</span></li>
+<li class="d-flex"><span>Address:</span> <span>Marv street, 10</span></li>
+<!--<li class="d-flex"><span>Zip code:</span> <span>1000</span></li>-->
+<li class="d-flex"><span>Phone: </span> <span>+998 90 605 11 99</span></li>
+</ul>
+</div>
+</div>
+<div class="counter-wrap ftco-animate d-flex mt-md-3">
+<div class="text">
+<p class="mb-4">
+<span class="number" data-number="70">0</span>
+<span>Projects complete</span>
+</p>
+<p><a href="https://t.me/shokh711" class="btn btn-primary py-3 px-3">Chat with me</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!--<section class="ftco-section ftco-partner">-->
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--<div class="col-sm ftco-animate">-->
+<!--<a href="#" class="partner"><img src="{% static 'images/partner-1.png' %}" class="img-fluid" alt="photo"></a>-->
+<!--</div>-->
+<!--<div class="col-sm ftco-animate">-->
+<!--<a href="#" class="partner"><img src="{% static 'images/partner-2.png' %}" class="img-fluid" alt="photo"></a>-->
+<!--</div>-->
+<!--<div class="col-sm ftco-animate">-->
+<!--<a href="#" class="partner"><img src="{% static 'images/partner-3.png' %}" class="img-fluid" alt="photo"></a>-->
+<!--</div>-->
+<!--<div class="col-sm ftco-animate">-->
+<!--<a href="#" class="partner"><img src="{% static 'images/partner-4.png' %}" class="img-fluid" alt="photo"></a>-->
+<!--</div>-->
+<!--<div class="col-sm ftco-animate">-->
+<!--<a href="#" class="partner"><img src="{% static 'images/partner-5.png' %}" class="img-fluid" alt="photo"></a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+<div class="container">
+<div class="row">
+<div class="col-md-3">
+<nav id="navi">
+<ul>
+<li><a href="#page-1">Education</a></li>
+<li><a href="#page-2">Experience</a></li>
+<li><a href="#page-3">Skills</a></li>
+<li><a href="#page-4">Awards</a></li>
+</ul>
+</nav>
+</div>
+<div class="col-md-9">
+<div id="page-1" class="page one">
+<h2 class="heading">Education</h2>
+ {% for i in education %}
+<div class="resume-wrap d-flex ftco-animate">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="flaticon-ideas"></span>
+</div>
+<div class="text pl-3">
+<span class="date">{{ i.years }}</span>
+<h2>{{ i.topic }}</h2>
+<!--<span class="position">Cambridge University</span>-->
+<p>{{ i.desc }}</p>
+</div>
+</div>
+ {% endfor %}
+</div>
+<div id="page-2" class="page two">
+<h2 class="heading">Experience</h2>
+ {% for j in experience %}
+<div class="resume-wrap d-flex ftco-animate">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="flaticon-ideas"></span>
+</div>
+<div class="text pl-3">
+<span class="date">{{ j.years }}</span>
+<h2>{{ j.name }}</h2>
+<!--<span class="position">Cambridge University</span>-->
+<p>{{ j.desc }}</p>
+</div>
+</div>
+ {% endfor %}
+</div>
+<div id="page-3" class="page three">
+<h2 class="heading">Skills</h2>
+<div class="row progress-circle mb-5">
+<div class="col-lg-4 mb-4">
+<div class="bg-white rounded-lg shadow p-4">
+<h2 class="h5 font-weight-bold text-center mb-4">Python</h2>
+
+<div class="progress mx-auto" data-value='90'>
+<span class="progress-left">
+<span class="progress-bar border-primary"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar border-primary"></span>
+</span>
+<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
+</div>
+</div>
+
+
+<div class="row text-center mt-4">
+<div class="col-6 border-right">
+<div class="h4 font-weight-bold mb-0">95%</div><span class="small text-gray">Last week</span>
+</div>
+<div class="col-6">
+<div class="h4 font-weight-bold mb-0">99%</div><span class="small text-gray">Last month</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="bg-white rounded-lg shadow p-4">
+<h2 class="h5 font-weight-bold text-center mb-4">HTML</h2>
+
+<div class="progress mx-auto" data-value='80'>
+<span class="progress-left">
+<span class="progress-bar border-primary"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar border-primary"></span>
+</span>
+<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
+</div>
+</div>
+
+
+<div class="row text-center mt-4">
+<div class="col-6 border-right">
+<div class="h4 font-weight-bold mb-0">28%</div><span class="small text-gray">Last week</span>
+</div>
+<div class="col-6">
+<div class="h4 font-weight-bold mb-0">60%</div><span class="small text-gray">Last month</span>
+</div>
+</div>
+
+</div>
+</div>
+<div class="col-lg-4 mb-4">
+<div class="bg-white rounded-lg shadow p-4">
+<h2 class="h5 font-weight-bold text-center mb-4">Django</h2>
+
+<div class="progress mx-auto" data-value='95'>
+<span class="progress-left">
+<span class="progress-bar border-primary"></span>
+</span>
+<span class="progress-right">
+<span class="progress-bar border-primary"></span>
+</span>
+<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+<div class="h2 font-weight-bold">95<sup class="small">%</sup></div>
+</div>
+</div>
+
+
+<div class="row text-center mt-4">
+<div class="col-6 border-right">
+<div class="h4 font-weight-bold mb-0">100%</div><span class="small text-gray">Last week</span>
+</div>
+<div class="col-6">
+<div class="h4 font-weight-bold mb-0">98%</div><span class="small text-gray">Last month</span>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6 animate-box">
+<div class="progress-wrap ftco-animate">
+<h3>Python</h3>
+<div class="progress">
+<div class="progress-bar color-1" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+<span>95%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 animate-box">
+<div class="progress-wrap ftco-animate">
+<h3>Django</h3>
+<div class="progress">
+<div class="progress-bar color-2" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%">
+<span>95%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 animate-box">
+<div class="progress-wrap ftco-animate">
+<h3>HTML</h3>
+<div class="progress">
+<div class="progress-bar color-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+<span>85%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 animate-box">
+<div class="progress-wrap ftco-animate">
+<h3>CSS</h3>
+<div class="progress">
+<div class="progress-bar color-4" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+<span>55%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 animate-box">
+<div class="progress-wrap ftco-animate">
+<h3>Database</h3>
+<div class="progress">
+<div class="progress-bar color-5" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+<span>90%</span>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6 animate-box">
+<div class="progress-wrap ftco-animate">
+<h3>Linux server</h3>
+<div class="progress">
+<div class="progress-bar color-6" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+<span>85%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="page-4" class="page four">
+<h2 class="heading">Awards</h2>
+ {% for a in awards %}
+<div class="resume-wrap d-flex ftco-animate">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="flaticon-ideas"></span>
+</div>
+<div class="text pl-3">
+<span class="date">{{ a.years}}</span>
+<h2>{{ a.name }}</h2>
+<span class="position">{{ a.where }}</span>
+<!--<p>{{ a.about }}</p>-->
+ </div>
+</div>
+ {% endfor %}
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section" id="services-section">
+<div class="container-fluid px-md-5">
+<div class="row justify-content-center py-5 mt-5">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<h1 class="big big-2">Services</h1>
+<h2 class="mb-4">Services</h2>
+<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>-->
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 text-center d-flex ftco-animate">
+<a href="#" class="services-1 shadow">
+<span class="icon">
+<i class="flaticon-analysis"></i>
+</span>
+<div class="desc">
+<h3 class="mb-5">Business Automation</h3>
+<p>Business automation, Projects for automation</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center d-flex ftco-animate">
+<a href="#" class="services-1 shadow">
+<span class="icon">
+<i class="flaticon-flasks"></i>
+</span>
+<div class="desc">
+<h3 class="mb-5">Mobilography</h3>
+<p>Mobilography and SMM service.</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center d-flex ftco-animate">
+<a href="#" class="services-1 shadow">
+<span class="icon">
+<i class="flaticon-ideas"></i>
+</span>
+<div class="desc">
+<h3 class="mb-5">Web Developer</h3>
+<p>A website, web application and more for your business.</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center d-flex ftco-animate">
+<a href="#" class="services-1 shadow">
+<span class="icon">
+<i class="flaticon-innovation"></i>
+</span>
+<div class="desc">
+<h3 class="mb-5">Ideas</h3>
+<p>Business ideas and projects.</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center d-flex ftco-animate">
+<a href="#" class="services-1 shadow">
+<span class="icon">
+<i class="flaticon-ux-design"></i>
+</span>
+<div class="desc">
+<h3 class="mb-5">Telegram bot</h3>
+<p>Any telegram bot and telegram services.</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 text-center d-flex ftco-animate">
+<a href="#" class="services-1 shadow">
+<span class="icon">
+<i class="flaticon-idea"></i>
+</span>
+<div class="desc">
+<h3 class="mb-5">Product Strategy</h3>
+<p>Product strategy is about imagining the future of your product</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section ftco-project" id="projects-section">
+<div class="container-fluid px-md-0">
+<div class="row no-gutters justify-content-center pb-5">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<h1 class="big big-2">Projects</h1>
+<h2 class="mb-4">Our Projects</h2>
+</div>
+</div>
+<div class="row no-gutters">
+<div class="col-md-4">
+<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/diffuso.png' %});">
+<div class="overlay"></div>
+<div class="text text-center p-4">
+<h3><a href="https://jomboy-mahalla.uz">Diffuso</a></h3>
+<span>First Project with template</span>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/emris.png' %});">
+<div class="overlay"></div>
+<div class="text text-center p-4">
+<h3><a href="#">Emris School</a></h3>
+<span>Emris learning centre's website</span>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/portfolio.png' %});">
+<div class="overlay"></div>
+<div class="text text-center p-4">
+<h3><a href="https://shokhjahon.uz">Portfolio</a></h3>
+<span>My bio and portfolio website</span>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/web.png' %});">
+<div class="overlay"></div>
+<div class="text text-center p-4">
+<h3><a href="https://shoxjahon.uz">Shokhjahon</a></h3>
+<span>simple website</span>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/mrit.jpg' %});">
+<div class="overlay"></div>
+<div class="text text-center p-4">
+<h3><a href="https://t.me/aiogram_sh_bot">MRIT Company BOT</a></h3>
+<span>test bot of MRIT</span>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url({% static 'images/fastfood.jpg' %});">
+<div class="overlay"></div>
+<div class="text text-center p-4">
+<h3><a href="https://t.me/fastfood_sam_bot">Fast Food bot</a></h3>
+<span>Fast Food test web-bot</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+<div class="container-fluid px-md-5">
+<div class="row d-md-flex align-items-center">
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18 shadow">
+<div class="text">
+<strong class="number" data-number="50">0</strong>
+<span>Awards</span>
+</div>
+</div>
+</div>
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18 shadow">
+<div class="text">
+<strong class="number" data-number="70">0</strong>
+<span>Complete Projects</span>
+</div>
+</div>
+</div>
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18 shadow">
+<div class="text">
+<strong class="number" data-number="50">0</strong>
+<span>Happy Customers</span>
+</div>
+</div>
+</div>
+<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+<div class="block-18 shadow">
+<div class="text">
+<strong class="number" data-number="1357">0</strong>
+<span>Cups of coffee</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!--<section class="ftco-section" id="blog-section">-->
+<!--<div class="container">-->
+<!--<div class="row justify-content-center mb-5 pb-5">-->
+<!--<div class="col-md-7 heading-section text-center ftco-animate">-->
+<!--<h1 class="big big-2">Blog</h1>-->
+<!--<h2 class="mb-4">Our Blog</h2>-->
+<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="row d-flex">-->
+<!--<div class="col-md-4 d-flex ftco-animate">-->
+<!--<div class="blog-entry justify-content-end">-->
+<!--<a href="{% url 'index' %}" class="block-20" style="background-image: url('{% static 'images/image_1.jpg' %}');">-->
+<!--</a>-->
+<!--<div class="text mt-3 float-right d-block">-->
+<!--<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--<div class="d-flex align-items-center mb-3 meta">-->
+<!--<p class="mb-0">-->
+<!--<span class="mr-2">Sept. 12, 2019</span>-->
+<!--<a href="#" class="mr-2">Admin</a>-->
+<!--<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-4 d-flex ftco-animate">-->
+<!--<div class="blog-entry justify-content-end">-->
+<!--<a href="single.html" class="block-20" style="background-image: url('{% static 'images/image_2.jpg' %}');">-->
+<!--</a>-->
+<!--<div class="text mt-3 float-right d-block">-->
+<!--<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--<div class="d-flex align-items-center mb-3 meta">-->
+<!--<p class="mb-0">-->
+<!--<span class="mr-2">Sept. 12, 2019</span>-->
+<!--<a href="#" class="mr-2">Admin</a>-->
+<!--<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-4 d-flex ftco-animate">-->
+<!--<div class="blog-entry">-->
+<!--<a href="single.html" class="block-20" style="background-image: url('{% static 'images/image_3.jpg' %}');">-->
+<!--</a>-->
+<!--<div class="text mt-3 float-right d-block">-->
+<!--<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>-->
+<!--<div class="d-flex align-items-center mb-3 meta">-->
+<!--<p class="mb-0">-->
+<!--<span class="mr-2">Sept. 12, 2019</span>-->
+<!--<a href="#" class="mr-2">Admin</a>-->
+<!--<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>-->
+<!--</p>-->
+<!--</div>-->
+<!--<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</section>-->
+
+
+
+<section class="ftco-section ftco-hireme img" style="background-image: url({% static 'images/bg_1.jpg' %})">
+<div class="overlay"></div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-7 ftco-animate text-center">
+<h2>I'm <span>Available</span> for freelancing</h2>
+<!--<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>-->
+<p class="mb-0"><a href="#contact-section" class="btn btn-primary py-3 px-5">Hire me</a></p>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+<div class="container">
+<div class="row justify-content-center mb-5 pb-3">
+<div class="col-md-7 heading-section text-center ftco-animate">
+<h1 class="big big-2">Contact</h1>
+<h2 class="mb-4">Contact Me</h2>
+<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>-->
+</div>
+</div>
+<div class="row d-flex contact-info mb-5">
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box text-center p-4 shadow">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-map-signs"></span>
+</div>
+<div>
+<h3 class="mb-4">Address</h3>
+<p>Marv Street(Qavola), 10</p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box text-center p-4 shadow">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-phone2"></span>
+</div>
+<div>
+<h3 class="mb-4">Contact Number</h3>
+<p><a href="tel:+998906051199">+998 90 605 11 99</a></p>
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box text-center p-4 shadow">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-paper-plane"></span>
+</div>
+<div>
+<h3 class="mb-4">Email Address</h3>
+<p> <a href="mailto:shokha.dev@gmail.com">shokha.dev@gmail.com<a/></p>
+<!--<p><a href="https://preview.colorlib.com/cdn-cgi/l/email-protection#026b6c646d427b6d7770716b76672c616d6f"><span class="__cf_email__" data-cfemail="fe97909891be87918b8c8d978a9bd09d9193">[email&#160;protected]</span></a></p>-->
+</div>
+</div>
+</div>
+<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+<div class="align-self-stretch box text-center p-4 shadow">
+<div class="icon d-flex align-items-center justify-content-center">
+<span class="icon-globe"></span>
+</div>
+<div>
+<h3 class="mb-4">Website</h3>
+<p><a href="#">shoxjahon.uz</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row no-gutters block-9">
+<div class="col-md-6 order-md-last d-flex">
+<form action="#" class="bg-light p-4 p-md-5 contact-form" method="post">{% csrf_token %}
+<div class="form-group">
+<input name="name" type="text" class="form-control" placeholder="Your Name">
+</div>
+<div class="form-group">
+<input name="phone" type="text" class="form-control" placeholder="Your Email">
+</div>
+<div class="form-group">
+<textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+</div>
+<div class="form-group">
+<input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+</div>
+</form>
+</div>
+<div class="col-md-6 d-flex">
+<div class="img" style="background-image: url({% static 'images/shokhjahon.jpg' %});"></div>
+</div>
+</div>
+</div>
+</section>
+<footer class="ftco-footer ftco-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">About</h2>
+<!--<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>-->
+<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+<!-- <i class='bx bx-phone' ></i>-->
+<li class="ftco-animate"><a href="tel:+998906051199"><span class="bx bx-phone"></span></a></li>
+<li class="ftco-animate"><a href="https://t.me/shokh711"><span class="bx bxl-telegram"></span></a></li>
+<li class="ftco-animate"><a href="https://instagram.com/111.shokh"><span class="icon-instagram"></span></a></li>
+<li class="ftco-animate"><a href="https://github.com/shokhjahon-dev"><span class="bx bxl-github"></span></a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4 ml-md-4">
+<h2 class="ftco-heading-2">Links</h2>
+<ul class="list-unstyled">
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Services</h2>
+<ul class="list-unstyled">
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+<li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+</ul>
+</div>
+</div>
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2">Have a Questions?</h2>
+<div class="block-23 mb-3">
+<ul>
+<li><span class="icon icon-map-marker"></span><span class="text">Marv Street</span></li>
+<li><a href="#"><span class="icon icon-phone"></span><span class="text">+998 90 605 11 99</span></a></li>
+<li><a href="mailto: shokha.dev@gmail.com"><span class="icon icon-envelope"></span><span class="text">shokha.dev@gmail.com<span class="__cf_email__"</span></span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+<p>
+Copyright &copy;<script data-cfasync="false" src="{% static 'js/email-decode.min.js' %}"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | Powered by: <i aria-hidden="true"></i> <a style="color: white" href="https://t.me/shokh711" target="_blank">Shokhjahon</a>
+</p>
+</div>
+</div>
+</div>
+</footer>
+
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/scrollax.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.{% static 'js/v2cb3a2ab87c5498db5ce7e6608cf55231689030342039" integrity="sha512-DI3rPuZDcpH/mSGyN22erN5QFnhl760f50/te7FTIYxodEF8jJnSFnfnmG/c+osmIQemvUrnBtxnMpNdzvx1/g==" data-cf-beacon='{"rayId":"7e71ff8f886610a8","version":"2023.4.0","b":1,"token":"cd0b4b3a733644fc843ef0b185f98241","si":100}' crossorigin="anonymous"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+<!-- Mirrored from preview.colorlib.com/theme/ronaldo/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Jul 2023 12:27:36 GMT -->
+</html>
