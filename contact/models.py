@@ -4,7 +4,7 @@ from django.db import models
 class Messages(models.Model):
     name = models.CharField(max_length=225, verbose_name="Your Name")
     phone = models.CharField(max_length=225, verbose_name="Your Email")
-    message = models.CharField(max_length=225, verbose_name="Message")
+    message = models.TextField(verbose_name="Message")
 
     class Meta:
         verbose_name = 'Message'
