@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Education(models.Model):
-    years = models.CharField(max_length=9, verbose_name="Yili")
+    years = models.CharField(max_length=20, verbose_name="Yili")
     topic = models.CharField(max_length=255, verbose_name="Mavzusi")
     desc = models.CharField(max_length=255, verbose_name="Mavzu haqida")
 
@@ -15,7 +15,7 @@ class Education(models.Model):
 
 
 class Experience(models.Model):
-    years = models.CharField(max_length=9, verbose_name="Yili")
+    years = models.CharField(max_length=20, verbose_name="Yili")
     name = models.CharField(max_length=255, verbose_name="Mavzusi")
     desc = models.CharField(max_length=255, verbose_name="Mavzu haqida")
 
@@ -28,7 +28,7 @@ class Experience(models.Model):
 
 
 class Awards(models.Model):
-    years = models.CharField(max_length=9, verbose_name="Yili")
+    years = models.CharField(max_length=20, verbose_name="Yili")
     name = models.CharField(max_length=255, verbose_name="Mukofot")
     where = models.CharField(max_length=255, verbose_name="Mukofot haqida", null=True)
 
