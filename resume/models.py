@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Create your models here
 class Education(models.Model):
     years = models.CharField(max_length=20, verbose_name="Yili")
     topic = models.CharField(max_length=255, verbose_name="Mavzusi")
