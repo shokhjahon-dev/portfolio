@@ -80,14 +80,20 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'portfolio',
-        'USER': 'portfolio',
-        'PASSWORD': 'shokhjahon1199',
-        'HOST': 'db',
-        'PORT': 5432,
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': 'EaD4GEc5c15Ef6dF34D1D362-eAdCc34',
+        'HOST': 'roundhouse.proxy.rlwy.net',
+        'PORT': '29374',
     }
 }
 
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.sqlite3",
+#         "NAME": "db.sqlite3",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -124,7 +130,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR / 'static']
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
 
 
 MEDIA_ROOT = [BASE_DIR / 'media']
